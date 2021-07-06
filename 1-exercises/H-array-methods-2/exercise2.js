@@ -11,10 +11,6 @@ function capitalise(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
-function capitalise(str) {
-  return str.split();
-}
-
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
