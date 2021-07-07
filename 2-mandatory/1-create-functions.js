@@ -38,7 +38,7 @@ const nameArray = [
 ];
 
 function tidyUpString(array) {
-  repairedArray = [];
+  const repairedArray = [];
   array.forEach((element) =>
     repairedArray.push(element.trim().replace("/", "").toLowerCase())
   );
@@ -64,8 +64,15 @@ Write a function that:
 - Numbers greater 100 must be replaced with 100.
 */
 
-function formatPercentage() {}
+function formatPercentage(numbers) {
+  const numbersToPercentage = [];
+  numbers.forEach((element) =>
+    numbersToPercentage.push(`${element.toFixed(2)}%`)
+  );
+  return numbersToPercentage;
+}
 
+console.log(formatPercentage([23, 18.103, 187.2, 0.372]));
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("first5 function works for more than five elements", () => {
