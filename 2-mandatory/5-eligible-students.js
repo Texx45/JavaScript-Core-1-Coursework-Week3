@@ -16,15 +16,6 @@ function getEligibleStudents(array) {
   return eligibleStudents;
 }
 
-// function getEligibleStudents(array) {
-//   const eligibleStudents = [];
-//   const isEligible = array.filter((student) => student[1] >= 8);
-//   for (student of isEligible) {
-//     eligibleStudents.push(student[0]);
-//   }
-//   return eligibleStudents;
-// }
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("getEligibleStudents function works", () => {

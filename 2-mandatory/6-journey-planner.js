@@ -20,8 +20,8 @@
 function checkCodeIsThere(stringText) {
   let magicWord = "code";
   //edit code below
-  if (stringText) {
-    return stringText;
+  if (stringText.includes(magicWord)) {
+    return stringText.indexOf(magicWord);
   } else {
     return "Not found";
   }
@@ -64,7 +64,9 @@ function checkCodeIsThere(stringText) {
   
   Hint: Use the corresponding array method to split the array.
 */
-function getTransportModes() {}
+function getTransportModes(arrayOfTransportModes) {
+  return arrayOfTransportModes.slice(1);
+}
 
 /*
   Implement the function isAccessibleByTransportMode that
@@ -81,9 +83,10 @@ function getTransportModes() {}
     
   Hint: Use the corresponding array method to decide if an element is member of an array.
 */
-function isAccessibleByTransportMode() {}
+function isAccessibleByTransportMode(arrOfModes, modeOfTransport) {
+  return arrOfModes.includes(modeOfTransport);
 
-/*
+  /*
   Implement the function getLocationName that
 
    - Accepts a location and available transports in an array
@@ -92,9 +95,11 @@ function isAccessibleByTransportMode() {}
    - Returns the name of the location
       e.g: "Tower Bridge"
 */
-function getLocationName() {}
+  function getLocationName(locationName) {
+    return locationName[0];
+  }
 
-/*
+  /*
  We arrived at the final method. it won't take long if you use the previously implemented functions wisely.
 
  Finish up the implementation of the function journeyPlanner that
@@ -121,8 +126,18 @@ function getLocationName() {}
    
   Advanced challange: try to use arrow function when invoking an array method.
 */
-function journeyPlanner(locations, transportMode) {
-  // Implement the function body
+  function journeyPlanner(locations, modeOfTransport) {
+    const routePlan = [];
+    locations.forEach((element) => {
+      const location = getLocationName(element);
+      const allTransportModes = getTransportModes(element);
+      if (isAccessibleByTransportMode(allTransportModes, modeOfTransport)) {
+        routePlan.push(location);
+      }
+    });
+    return routePlan;
+    // Implement the function body
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
