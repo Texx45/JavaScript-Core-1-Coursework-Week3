@@ -21,6 +21,8 @@ arr.forEach(function (num) {
   }
 });
 
+// test passed
+
 /* EXPECTED OUTPUT */
 
 /*

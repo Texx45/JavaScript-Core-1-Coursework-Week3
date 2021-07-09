@@ -29,3 +29,5 @@ console.log(multiplyNumber);
 console.log(multiply100);
 console.log(multiplyArray);
 console.log(numbersBy100);
+
+//test passed

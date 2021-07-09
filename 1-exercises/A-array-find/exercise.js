@@ -24,6 +24,6 @@ function findLongNameThatStartsWithA(names) {
 var longNameThatStartsWithA = names.find(findLongNameThatStartsWithA);
 
 console.log(longNameThatStartsWithA);
-
+//Test passed
 /* EXPECTED OUTPUT */
 // "Alexandra"

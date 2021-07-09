@@ -15,3 +15,5 @@ console.log(statement);
   "I like programming"
   
 */
+
+// test passed

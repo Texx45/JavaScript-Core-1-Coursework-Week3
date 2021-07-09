@@ -22,5 +22,5 @@ if (groupIsOnlyStudents) {
 }
 
 /* EXPECTED RESULT */
-
+// test passed
 // The group does not contain only students

@@ -10,6 +10,7 @@ function isInUK(country) {
   return ukNations.includes(country); // complete this statement
 }
 
+// test passed
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

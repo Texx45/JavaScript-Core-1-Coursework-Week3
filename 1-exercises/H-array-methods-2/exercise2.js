@@ -25,3 +25,4 @@ console.log(capitalise("hello"));
   Daniel
   Hello
 */
+// test passed
