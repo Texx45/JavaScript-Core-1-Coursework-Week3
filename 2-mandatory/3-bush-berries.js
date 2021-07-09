@@ -26,6 +26,8 @@ function isBushSafe(berryArray) {
     : "Toxic! Leave bush alone!"; //Write your code here
 }
 
+// test passed
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("isBushSafe finds toxic busy", () => {

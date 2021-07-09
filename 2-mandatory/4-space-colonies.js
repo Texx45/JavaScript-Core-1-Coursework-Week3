@@ -48,3 +48,5 @@ test("getSettlers function works", () => {
     "A Great family",
   ]);
 });
+
+// test passed

@@ -26,6 +26,8 @@ function findSafeOxygenLevel(oxygenLevels) {
   }
 }
 
+// test passed
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("findSafeOxygenLevel function works - case 1", () => {

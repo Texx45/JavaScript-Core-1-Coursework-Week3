@@ -16,6 +16,8 @@ function getEligibleStudents(array) {
   return eligibleStudents;
 }
 
+// test passed
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("getEligibleStudents function works", () => {

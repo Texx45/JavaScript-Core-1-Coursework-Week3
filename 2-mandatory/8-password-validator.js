@@ -38,6 +38,8 @@ function validatePasswords(passwords) {
   return isPasswordValidated;
 }
 
+// test passed
+
 // Returns true if string contains at least one uppercase letter.
 function containsUppercaseLetter(string) {
   return /[A-Z]/.test(string);

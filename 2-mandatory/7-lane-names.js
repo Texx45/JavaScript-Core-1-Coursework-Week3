@@ -21,5 +21,7 @@ test("getLanes function works", () => {
     "Alban Highwalk",
   ];
 
+  // test passed
+
   expect(getLanes(streetNames)).toEqual(["Abchurch Lane", "Addle Lane"]);
 });
